@@ -1,0 +1,55 @@
+/* RESET */
+body, h1, h2, h3, p, ul {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #252525;
+}
+/* RESET */
+
+/* MENU */
+.menu {
+    background-color: #252525;
+    padding: 20px 0;
+}
+
+.container-menu {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container-menu::after, .container-menu::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+a.logo-menu {
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+.navbar {
+    float: right;
+    margin-right: 10px;
+}
+
+.navbar li {
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+/* MENU */
