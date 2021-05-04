@@ -1,3 +1,15 @@
+/* BREAKPOINTS */
+
+/* 
+
+960
+
+740
+
+*/
+
+/* BREAKPOINTS */
+
 /* RESET */
 * {
     box-sizing: border-box;
@@ -55,7 +67,21 @@ a.logo-menu {
     font-size: 1.125em;
     font-weight: bold;
 }
-/* MENU */
+
+@media (max-width: 740px) {
+    a.logo-menu {
+        float: none;
+        margin: 0 auto;
+    }
+    .menu {
+        text-align: center;
+    }
+    .navbar {
+        float: none;
+        clear: both;
+    }
+}
+/* MENU */ 
 
 /* INTRO */
 .intro {
@@ -83,6 +109,12 @@ a.logo-menu {
 .intro p {
     font-style: italic;
     font-size: 1.125em;
+}
+
+@media (max-width: 739px) {
+    .intro {
+        padding: 60px 0;
+    }
 }
 /* INTRO */
 
@@ -140,6 +172,27 @@ a.logo-menu {
     text-align: center;
     margin: 20px auto;
     max-width: 460px;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+    .container-sobre {
+        max-width: 720px;
+    }
+    
+    .item-sobre {
+        width: 340px;
+    }
+}
+
+@media (max-width: 740px) {
+    .container-sobre {
+        max-width: 300px;
+    }
+
+    .item-sobre {
+        width: 300px;
+        margin: 0 auto;
+    }
 }
 /* SOBRE */
 
@@ -217,6 +270,26 @@ h2.produto-mineiro::before {
     padding: 15px 0;
     margin: 20px auto 0 auto;
 }
+
+@media (min-width: 740px) and (max-width: 980px) {
+    .container-produtos {
+        max-width: 720px;
+    }
+    
+    .item-produto {
+        width: 220px;
+    }
+}
+
+@media (max-width: 740px) {
+    .container-produtos {
+        max-width: 300px;
+    }
+
+    .item-produto {
+        margin: 0 auto 20px auto;
+    }
+}
 /* PRODUTOS */
 
 /* LOCAIS */
@@ -271,6 +344,27 @@ h2.produto-mineiro::before {
     color: #252525;
     padding: 10px 20px;
 
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+    .locais {
+        max-width: 720px;
+    }
+    
+    .locais-item > div, .locais-item img {
+        width: 340px;
+    }
+}
+
+@media (max-width: 740px) {
+    .locais {
+        max-width: 300px;
+    }
+
+    .locais-item > div, .locais-item img {
+        width: 300px;
+        margin: 0px;
+    }
 }
 /* LOCAIS */
 
@@ -336,7 +430,27 @@ h2.produto-mineiro::before {
     padding: 11px 0;
     color: #fff;
     cursor: pointer;
+}
 
+@media (min-width: 740px) and (max-width: 980px) {
+    .container-newsletter {
+        max-width: 720px;
+    }
+
+    .newsletter-info, .newsletter form, .newsletter input  {
+        width: 340px;
+    }
+}
+
+@media (max-width: 740px) {
+    .container-newsletter {
+        max-width: 300px;
+    }
+
+    .newsletter-info, .newsletter form, .newsletter input  {
+        width: 300px;
+        margin: 10px 0 0 0;
+    }
 }
 /* NEWSLETTER */
 
@@ -368,5 +482,26 @@ h2.produto-mineiro::before {
     float: right;
     margin: 0 10px;
     display: block;
+}
+
+@media (max-width: 740px) {
+    .footer-container {
+        max-width: 300px;
+    }
+
+    .footer p {
+        float: none;
+        margin: 0px;
+    }
+
+    .footer img {
+        float: none;
+        margin: 20px 0;
+    }
+
+    .newsletter-info, .newsletter form, .newsletter input  {
+        width: 300px;
+        margin: 10px 0 0 0;
+    }
 }
 /* FOOTER */
